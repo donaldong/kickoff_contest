@@ -13,7 +13,7 @@ exercise do not count unless Mary has done it at least `K` times. Given a list
 of `N` points Mary earned today, how many points does she actually get?
 
 ## Constrains
-The first line contains two integers `N` and `K`, `1 <= N <= K <= 100000`. In
+The first line contains two integers `N` and `K`, `1 <= K <= N <= 100000`. In
 the next one or more lines, there are `N` more integers `P`, representing the
 points Mary earned, `1 <= P <= 10000`.
 
