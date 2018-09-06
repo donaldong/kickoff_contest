@@ -1,4 +1,6 @@
-# Many Beagles Procured Toys
+Problem E
+
+*Many Beagles Procured Toys*
 
 You want to move your beagles to the other side of the room. It's a long
 journey, they would not make it without Many Beagles Procured Toys.  Some of
@@ -12,8 +14,7 @@ reserve, it will not lend the reserve toy to anyone.
 You want to know what is the minimal number of beagles that cannot make it to
 the other side of the room. 
 
-## Input 
-
+*Input*
 The first line of input contains three integers:
 - total number of beagles: `2 <= N <= 10`
 - the ids of beagles who lost their toys: `2 <= S <= N`
@@ -22,14 +23,18 @@ The first line of input contains three integers:
 The second line contains `S` ids ranges from `1` to `N`.
 The third line contains `R` ids ranges from `1` to `N`.
 
-# Sample Input
+*Constrains*
+Time Limit: `1 sec`
+Mem Limit: `512 MB`
+
+*Sample Input*
 ```
 5 2 1
 2 4
 3
 ```
 
-# Sample Output
+*Sample Output*
 ```
 1
 ```
