@@ -17,7 +17,7 @@ int step(int r, int c, int dir) {
     r += DR[dir];
     c += DC[dir];
     ++res;
-  } while (in_grid(r, c) && G[r][c] == '?');
+  } while (in_grid(r, c) && G2[r][c] == '?');
   return res - 1;
 }
 
@@ -41,7 +41,9 @@ void fill() {
       u = min(u, step(r, i, 1)), d = min(d, step(r, i, 3));
     }
     // then try to fill up and down
-    fill(r, c, 1, u, m), fill(r, c, 3, d, m);
+    for (int i = c - a; i <= c + b; ++i) {
+      fill(r, i, 1, u, m), fill(r, i, 3, d, m);
+    }
   }
 }
 
